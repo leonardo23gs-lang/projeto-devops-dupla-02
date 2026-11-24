@@ -21,4 +21,4 @@ Os testes usam o test_client do Flask, que chama a aplicação sem abrir a porta
 ## Quem fez o quê
 Leonardo (aluno A, GitHub leonardo23gs-lang): criei a página de status com testes antes da publicação e ajustei o deploy do Pages quando ele falhou, conferi a visibilidade da imagem no ghcr.io, rodei as versões v1, v2 e v3 com Docker, fiz o rollback operacional para a v1 e o git revert que gerou a v3. Variação: dupla-02, porta 5002.
 
-A completar pelo aluno B.
+**Afonso (aluno B):** configurei o Docker Desktop no computador, fiz o login no GHCR e baixei as imagens v1, v2 e v3. Executei os contêineres e testei a rota /saude pelo navegador/terminal usando o curl. Durante o teste da v2, identifiquei que a aplicação estava rodando na porta 5003, enquanto o Docker estava configurado para a porta 5002. Conferi os logs para identificar o problema e realizei o rollback para a v1, confirmando que ela voltou a funcionar. Depois, baixei e executei a v3, verificando que a aplicação voltou a responder corretamente na porta 5002. Também atualizei o repositório com o git pull para receber as alterações finais do projeto.
